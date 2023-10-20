@@ -4,7 +4,7 @@
     "plugin:json/recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
+    "plugin:react-hooks/recommended"
   ],
   "env": {
     "es6": true,
@@ -19,11 +19,11 @@
         "objects": "always-multiline",
         "imports": "always-multiline",
         "exports": "always-multiline",
-        "functions": "never",
+        "functions": "never"
 
       }
     ],
-    "react/prop-types": [2, { "skipUndeclared": true }]
+    "react/prop-types": [2, { "skipUndeclared": true }],
   },
   "parserOptions": {
     "ecmaVersion": 2020,
@@ -33,4 +33,3 @@
     }
   }
 }
-
