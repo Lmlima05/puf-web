@@ -46,6 +46,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "i": "^0.3.7",
+    "module-resolver": "^1.0.0",
     "prettier": "^3.0.3",
     "react-app-rewired": "^2.2.1"
   }
