@@ -1,23 +1,18 @@
 import * as React from 'react'
-import styled from 'styled-components'
 
-import { Field } from './../../components/uikit'
-
-const Main = styled('form')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-`
-const Form = styled('form')``
+import { Box, Field, Button } from './../../components/uikit'
 
 export const Signup = () => {
   return (
-    <Main>
-      <Form>
-        <Field type="text" name="name" label="Nome" />
-        <Field type="text" name="email" label="E-mail" />
-      </Form>
-    </Main>
+    <Box flex={1} flexbox="column" center>
+      <Box style={{ width: 380 }}>
+        <Field type="text" name="name" label="Nome" mb={3} />
+        <Field type="text" name="email" label="E-mail" mb={3} />
+        <Field type="password" name="password" label="Senha" mb={3} />
+        <Box flexbox center>
+          <Button>Registrar </Button>
+        </Box>
+      </Box>
+    </Box>
   )
 }
