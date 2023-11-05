@@ -10,9 +10,16 @@ export const flexbox = props => {
   const direction =
     typeof props.flexbox === Boolean ? props.flexDirection : props.flexbox
 
+  const justifyContent = props.justifyContent || (props.center && 'center')
+  const alignItems = props.alignItems || (props.center && 'center')
+
   return `
+    ${(props.flex && `flex: ${props.flex};`) || ''}
     ${(props.flexbox && 'display: flex;') || ''}
-    ${(direction && `flex-direction: ${direction}`) || ''}
+    ${(direction && `flex-direction: ${direction};`) || ''}
+    ${(justifyContent && `justify-content: ${justifyContent};`) || ''}
+    ${(alignItems && `align-items: ${alignItems};`) || ''}
+
   `
 }
 

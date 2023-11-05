@@ -5,7 +5,7 @@ import { Label } from './../Label'
 import { Input } from './../Input'
 
 export const Field = ({ type, name, label, ...props }) => (
-  <Box {...props} flexybox="coloumn">
+  <Box {...props} flexbox="column">
     <Label htmlFor={name}>{label}</Label>
     <Input type={type} name={name} id={name} />
   </Box>
